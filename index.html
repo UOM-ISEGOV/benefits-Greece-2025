@@ -157,11 +157,49 @@
               ιστοτόπους για να υποβάλετε αίτηση για κάθε επίδομα ξεχωριστά (π.χ. https://www.gov.gr/ και https://opeka.gr/).
             </p>
           </div>
+          <br>
           <button id="closeDisclaimer">Καταλαβαίνω</button>
         </div>
       </div>
 
-      <!-- Start Screen -->
+      <div class="disclaimer-overlay" id="benefitsOverlay" style="display: none;">
+        <div class="disclaimer">
+          <h2 style="font-size: 28px; font-weight: bold;"><strong>Επιδόματα που Εξετάζονται στο Ερωτηματολόγιο</strong></h2>
+          <br>
+          <div class="disclaimer-content">
+            <p>
+              Τα κοινωνικά επιδόματα που χορηγούνται το 2025 και εξετάζονται σε αυτόν τον προσομοιωτή είναι τα εξής: (δεν περιλαμβάνονται επιδόματα ιατρικής φύσεως ή όσα οριοθετούνται κάθε έτος) <br><br>
+
+              <strong>Φοιτητικό επίδομα:</strong> Δίνεται εφάπαξ και αφορά προπτυχιακούς φοιτητές που σπουδάζουν μακριά από τον τόπο κατοικίας τους.<br><br>
+              
+              <strong>Επίδομα Ορεινών και Μειονεκτικών περιοχών </strong> Για κατοίκους συγκεκριμένων περιοχών λόγω δύσκολων συνθηκών διαβίωσης. <br><br>
+
+              <strong>Επίδομα Παιδιού:</strong> Παρέχεται σε οικογένειες με παιδιά.
+              <br><br>
+
+              <strong>Επίδομα γέννησης:</strong> Δίνεται εφάπαξ για κάθε παιδί που γεννιέται στην Ελλάδα.
+              <br><br>
+
+              <strong>Επίδομα στέγασης:</strong> Παρέχει ενίσχυση για το ενοίκιο.<br><br>
+
+              <strong>Ελάχιστο εγγυημένο εισόδημα:</strong> Ενίσχυση σε άτομα ή οικογένειες που βρίσκονται σε κατάσταση ακραίας φτώχειας.<br><br>
+
+              <strong>Επίδομα ανεργίας:</strong> Καταβάλλεται σε ασφαλισμένους που έχουν χάσει τη δουλειά τους.<br><br>
+
+              <strong>Πιλοτική επιδότηση ανεργίας:</strong> Νέο επίδομα που έχει στόχο να εξελίξει και να αντικαταστήσει το επίδομα ανεργίας για ασφαλισμένους που έχουν χάσει τη δουλειά τους.<br><br>
+
+              <strong>Επίδομα αναδοχής:</strong> Οικονομική ενίσχυση για την ανατροφή παιδιών σε αναδοχή.<br><br>
+              
+              <strong>Επίδομα στέγασης ανασφάλιστων υπερηλίκων:</strong> Αφορά το κόστος στέγασης για ηλικιωμένους χωρίς άλλους πόρους.<br><br>
+              
+              <strong>Επίδομα ανασφάλιστων υπερηλίκων:</strong> Βοήθημα για ηλικιωμένους χωρίς επαρκή ασφάλιση και εισόδημα. <br><br>
+            </p>
+            <br>
+         </div>
+          <button id="closeBenefits">Καταλαβαίνω</button>
+        </div>
+      </div>
+     <!-- Start Screen -->
       <div id="start-container">
         <p class="govgr-body" id="intro-box" tabindex="4">
           <strong data-component="subTitle1" class="language-component"
@@ -178,11 +216,10 @@
          </p>
         <p id="disclaimer-prompt" style="font-size: 1.2em;">
           Τα αποτελέσματα αυτού του προσομοιωτή αποτελούν οδηγό και δεν
-          εγγυώνται την επιλεξιμότητά σας ή μη για επιδόματα. Για ακριβή αποτελέσματα, πρέπει να διαβάζετε και το <strong>κείμενο βοήθειας</strong> που εμφανίζεται στο τέλος κάποιων ερωτήσεων με το <strong>σύμβολο i.</strong> Ο προσομοιωτής δεν
-          λαμβάνει υπόψη όλες τις παραμέτρους που ισχύουν ανά περίπτωση. Πριν συνεχίσετε, παρακαλούμε
-          διαβάστε την
-          <a href="#" id="openDisclaimer" class="text-blue-600 hover:underline">Αποποίηση Ευθύνης</a>
-          σχετικά με την εφαρμογή Κοινωνικά επιδόματα 2025.
+          εγγυώνται την επιλεξιμότητά σας ή μη για 
+          <a href="#" id="openBenefits" class="text-blue-600 hover:underline"><strong>επιδόματα</strong></a>. Για ακριβή αποτελέσματα, πρέπει να διαβάζετε και το <strong>κείμενο βοήθειας</strong> που εμφανίζεται στο τέλος κάποιων ερωτήσεων με το <strong>σύμβολο i.</strong> Ο προσομοιωτής δεν μπορεί να λάβει υπόψη τυχόν ιδιαίτερες παραμέτρους που μπορεί να ισχύουν ανά περίπτωση. Πριν συνεχίσετε, σας παρακαλούμε να
+          διαβάσετε την
+          <a href="#" id="openDisclaimer" class="text-blue-600 hover:underline font-bold">Αποποίηση Ευθύνης</a>          σχετικά με την εφαρμογή Κοινωνικά επιδόματα 2025.
         </p>
         <button
           class="govgr-btn govgr-btn-primary govgr-btn-cta"
@@ -280,5 +317,17 @@
         location.reload();
       });
     </script>
+    <script>
+
+    document.getElementById("openBenefits").addEventListener("click", function (e) {
+      e.preventDefault();
+      document.getElementById("benefitsOverlay").style.display = "flex";
+    });
+  
+    // Κλείσιμο overlay για επιδόματα
+    document.getElementById("closeBenefits").addEventListener("click", function () {
+      document.getElementById("benefitsOverlay").style.display = "none";
+    });
+  </script>
   </body>
 </html>
