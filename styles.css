@@ -169,13 +169,15 @@ body {
   /* Εξασφαλίζει ότι το popup λαμβάνει pointer events */
   pointer-events: auto;
 }
-#closeDisclaimer {
+#closeDisclaimer, #closeBenefits {
   background-color: green;
   color: white;
   padding: 5px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
-#closeDisclaimer:hover {
+#closeDisclaimer:hover, #closeBenefits:hover {
   background-color: rgb(52, 117, 52);
 }
 /* Όταν το modal είναι ανοιχτό, αποτρέπουμε pointer events στην υπόλοιπη σελίδα */
